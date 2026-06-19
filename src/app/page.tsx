@@ -1,65 +1,109 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="max-w-2xl mx-auto px-6 py-12">
+      {/* Header */}
+      <section className="mb-8">
+        <h1 className="text-3xl font-bold tracking-tight">TODO: Your Name</h1>
+        <p className="text-lg text-gray-600 mt-1">TODO: Your Title / Role</p>
+        <div className="flex flex-wrap gap-4 mt-3 text-sm text-gray-500">
+          <a href="mailto:todo@example.com" className="hover:text-gray-800">todo@example.com</a>
+          <a href="https://github.com/todo" className="hover:text-gray-800">GitHub</a>
+          <a href="https://linkedin.com/in/todo" className="hover:text-gray-800">LinkedIn</a>
+          <span>TODO: Location</span>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Summary */}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold border-b border-gray-200 pb-1 mb-3">Summary</h2>
+        <p className="text-gray-700 leading-relaxed">
+          TODO: One paragraph summary of your background, expertise, and what you&apos;re looking for.
+        </p>
+      </section>
+
+      {/* Experience */}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold border-b border-gray-200 pb-1 mb-4">Experience</h2>
+
+        <div className="mb-5">
+          <div className="flex justify-between items-baseline">
+            <span className="font-medium">TODO: Company Name</span>
+            <span className="text-sm text-gray-500">TODO: Mon YYYY – Mon YYYY</span>
+          </div>
+          <p className="text-sm text-gray-600 mb-2">TODO: Role / Title</p>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>TODO: Key achievement or responsibility</li>
+            <li>TODO: Key achievement or responsibility</li>
+          </ul>
         </div>
-      </main>
-    </div>
+
+        <div className="mb-5">
+          <div className="flex justify-between items-baseline">
+            <span className="font-medium">TODO: Company Name</span>
+            <span className="text-sm text-gray-500">TODO: Mon YYYY – Mon YYYY</span>
+          </div>
+          <p className="text-sm text-gray-600 mb-2">TODO: Role / Title</p>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>TODO: Key achievement or responsibility</li>
+            <li>TODO: Key achievement or responsibility</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="flex justify-between items-baseline">
+            <span className="font-medium">TODO: Company Name</span>
+            <span className="text-sm text-gray-500">TODO: Mon YYYY – Mon YYYY</span>
+          </div>
+          <p className="text-sm text-gray-600 mb-2">TODO: Role / Title</p>
+          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>TODO: Key achievement or responsibility</li>
+            <li>TODO: Key achievement or responsibility</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold border-b border-gray-200 pb-1 mb-4">Education</h2>
+
+        <div className="mb-4">
+          <div className="flex justify-between items-baseline">
+            <span className="font-medium">TODO: University Name</span>
+            <span className="text-sm text-gray-500">TODO: YYYY – YYYY</span>
+          </div>
+          <p className="text-sm text-gray-600">TODO: Degree, Major</p>
+        </div>
+
+        <div>
+          <div className="flex justify-between items-baseline">
+            <span className="font-medium">TODO: University / Course Name</span>
+            <span className="text-sm text-gray-500">TODO: YYYY – YYYY</span>
+          </div>
+          <p className="text-sm text-gray-600">TODO: Degree / Certification, Major</p>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section>
+        <h2 className="text-xl font-semibold border-b border-gray-200 pb-1 mb-3">Skills</h2>
+        <div className="flex flex-wrap gap-2">
+          {[
+            "TODO: Skill 1",
+            "TODO: Skill 2",
+            "TODO: Skill 3",
+            "TODO: Skill 4",
+            "TODO: Skill 5",
+            "TODO: Skill 6",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
