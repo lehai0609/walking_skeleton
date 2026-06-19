@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TODO: Your Name — CV",
-  description: "TODO: Your professional summary in one line.",
+  title: "Le Quang Hai — Senior Finance Leader",
+  description: "FCCA · CPA Vietnam. Senior finance leader with 15+ years across Big 4 audit, banking, and finance leadership. Head of Financial Analytics & Control at Synnex FPT.",
 };
 
 export default function RootLayout({
